@@ -30,6 +30,7 @@ a:hover {
 
 .daohang {
     color: white;
+    z-index: 0;
     position: fixed;
     /*相对位置*/
     left: 10px;
