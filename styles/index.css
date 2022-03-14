@@ -1,0 +1,91 @@
+ul {
+    /*设置导航栏的框框*/
+    margin: 50px 50px;
+    /*框框整体的位置，30px是指离网页的顶部和下部的距离，auto控制的是左右距离为自动调节*/
+    width: 750px;
+    /*框框的宽度*/
+    /* height: 350px;!*框框的长度*!*/
+    padding: 0;
+    /*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+    /*border:1px solid #000;!*添加边框*!*/
+}
+
+li {
+    width: 250px;
+    /*ul的宽度是li宽度的3倍的时候，可以使列表换成3列*/
+    list-style-type: none;
+    /* 去掉li前的点 */
+    float: left;
+    /*将li设置成做浮动，变为联动*/
+}
+
+.bg {
+    background-image: url("https://s1.ax1x.com/2022/03/13/bqjE9K.jpg");
+}
+
+.headline {
+    color: white;
+    /*字体颜色*/
+    font-size: 55px;
+    /*字体大小*/
+    font-weight: 500;
+    /*字体粗细*/
+    position: relative;
+    /*相对位置*/
+    left: 130px;
+    /*距离左边130像素*/
+    top: 130px;
+    /*距离上面130像素*/
+    text-shadow: 2px 2px #94b4dc;
+    /*文本阴影*/
+}
+
+.sub_title {
+    /* flex列式布局 */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.dazi {
+    font-size: 20px;
+    /*字体大小*/
+
+    /* flex列式布局 */
+    display: flex;
+    flex-direction: row;
+    /* 内容居中 */
+    justify-content: center;
+    /* 底部空开一段距离 */
+    margin-bottom: 5%;
+}
+
+.dazi img {
+    margin-right: 5%;
+}
+
+.dazi div {
+    /* 上下居中 */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.xiaozi {
+    font-size: 15px;
+    /*字体大小*/
+    text-align: center;
+    white-space: nowrap;
+}
+
+.icon {
+    width: 14%;
+    height: 14%;
+}
+
+.scu {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+}

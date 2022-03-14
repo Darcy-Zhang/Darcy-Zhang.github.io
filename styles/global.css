@@ -1,0 +1,51 @@
+a {
+    display: block;
+    /*将a变成块状*/
+    width: 200px;
+    /*设置块的宽度*/
+    height: 90px;
+    /*设置块的长度*/
+    /*font-family: Microsoft Yahei;*/
+    line-height: 17px;
+    /*行距*/
+    /*background-color: #3f85dc;*/
+    margin: 0 0;
+    /*块里的高宽通过margin设置*/
+    color: #fff;
+    text-align: right;
+    /*字体居右*/
+    text-decoration: none;
+    /*去掉下划线*/
+    font-size: 15px;
+}
+
+.daohang {
+    color: white;
+    position: relative;
+    /*相对位置*/
+    left: 30px;
+    /*距离左边130像素*/
+    top: 130px;
+    /*距离上面130像素*/
+}
+
+.daohang a {
+    text-align: center;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;
+    /* 兼容Opera */
+    background-size: cover;
+    zoom: 1;
+}

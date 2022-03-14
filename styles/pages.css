@@ -1,0 +1,57 @@
+li {
+    list-style-type: none;
+    /* 去掉li前的点 */
+}
+
+a {
+    display: block;
+    /*将a变成块状*/
+    width: 100px;
+    /*设置块的宽度*/
+    height: 80px;
+    /*设置块的高度*/
+    /* font-family: Microsoft Yahei;*/
+    line-height: 20px;
+    /*设置行高*/
+    background-color: #3f85dc;
+    margin: 2px 0;
+    /*块里的高宽通过margin设置*/
+    color: #fff;
+    text-align: center;
+    /*字体居中*/
+    text-decoration: none;
+    /*去掉下划线*/
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: #94b4dc;
+}
+
+.daohang {
+    color: white;
+    position: fixed;
+    /*相对位置*/
+    left: 10px;
+    /*距离左边130像素*/
+    top: 130px;
+    /*距离上面130像素*/
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /*背景是否随着鼠标滚动而滚动*/
+    -webkit-background-size: cover;
+    /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;
+    /* 兼容Opera */
+    background-size: cover;
+    zoom: 1;
+}

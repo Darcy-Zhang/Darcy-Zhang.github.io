@@ -1,44 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
-    <title>牛逼的echart</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/utils/echarts.js"></script>
-    <link rel="stylesheet" type="text/css" href="/global.css">
+    <link rel="stylesheet" type="text/css" href="/styles/global.css">
+    <link rel="stylesheet" type="text/css" href="/styles/index.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>新型冠状病毒肺炎实时地图</title>
 </head>
 
 <body>
-    <div id="main">
-        <script type="text/javascript">
-            // 基于准备好的dom，初始化echarts实例
-            var myChart = echarts.init(document.getElementById('main'));
+    <div class="bg">
+        <h1 class="headline">新冠肺炎疫情全球预测</h1>
 
-            // 指定图表的配置项和数据
-            var option = {
-                title: {
-                    text: 'ECharts 入门示例'
-                },
-                tooltip: {},
-                legend: {
-                    data: ['销量']
-                },
-                xAxis: {
-                    data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-                },
-                yAxis: {},
-                series: [
-                    {
-                        name: '销量',
-                        type: 'bar',
-                        data: [5, 20, 36, 10, 10, 20]
-                    }
-                ]
-            };
+        <ul class=daohang>
+            <li><a href="/index.html">
+                    <div class="sub_title">
+                        <div class="dazi">
+                            <img src="https://s1.ax1x.com/2022/03/13/bqquFK.png" alt="地球图标" class="icon">
+                            <div>新冠实时预测</div>
+                        </div>
+                        <div class="xiaozi">
+                            Prediction of COVID-19
+                        </div>
+                    </div>
+                </a></li>
+            <li><a href="/src/vaccination.html">
+                    <div class="sub_title">
+                        <div class="dazi">
+                            <img src="https://s1.ax1x.com/2022/03/13/bqqELR.png" alt="疫苗图标" class="icon">
+                            <div>疫苗接种情况</div>
+                        </div>
+                        <div class="xiaozi">
+                            Vaccination status
+                        </div>
+                    </div>
+                </a></li>
+            <li><a href="/src/news.html">
+                    <div class="sub_title">
+                        <div class="dazi">
+                            <img src="https://s1.ax1x.com/2022/03/13/bqqZe1.png" alt="新闻图标" class="icon">
+                            <div>新闻报道</div>
+                        </div>
+                        <div class="xiaozi">
+                            News report
+                        </div>
+                    </div>
+                </a></li>
+            <li><a href="/src/prevent.html">
+                    <div class="sub_title">
+                        <div class="dazi">
+                            <img src="https://s1.ax1x.com/2022/03/13/bqqedx.png" alt="病毒图标" class="icon">
+                            <div>预防措施</div>
+                        </div>
+                        <div class="xiaozi">
+                            Preventive measure
+                        </div>
+                    </div>
+                </a></li>
+            <li><a href="/src/prediction.html">
+                    <div class="sub_title">
+                        <div class="dazi">
+                            <img src="https://s1.ax1x.com/2022/03/13/bqqAy9.png" alt="研究图标" class="icon">
+                            <div>预测系统</div>
+                        </div>
+                        <div class="xiaozi">
+                            Prediction system
+                        </div>
+                    </div>
+                </a></li>
+            <li><a href="/src/research.html">
+                    <div class="sub_title">
+                        <div class="dazi">
+                            <img src="https://s1.ax1x.com/2022/03/13/bqqedx.png" alt="预防图标" class="icon">
+                            <div>相关研究</div>
+                        </div>
+                        <div class="xiaozi">
+                            Correlational research
+                        </div>
+                    </div>
+                </a></li>
+        </ul>
 
-            // 使用刚指定的配置项和数据显示图表。
-            myChart.setOption(option);
-        </script>
+        <div class="scu">友情链接<a href="https://cs.scu.edu.cn/">四川大学计算机学院</a></div>
     </div>
 </body>
 
